@@ -4,6 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#AAD7EB"
     tools:context=".ResultActivity">
 
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:inputType="textNoSuggestions"
+        android:text="SEU IMC É:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:text="@string/buttonOk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        app:layout_constraintVertical_bias="0.54"
+        app:rippleColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/textViewResultImc"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="23,4" />
+
+    <TextView
+        android:id="@+id/textViewResultFaixa"
+        android:layout_width="226dp"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:text="SUA FAIXA DE PESO É DE:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultImc"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="399dp"
+        android:layout_height="49dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultFaixa"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Obesidade" />
 </androidx.constraintlayout.widget.ConstraintLayout>

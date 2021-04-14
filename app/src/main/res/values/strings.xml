@@ -4,4 +4,5 @@
     <string name="peso">Peso</string>
     <string name="calcular">Calcular</string>
     <string name="calculo_de_imc">Cálculo de IMC</string>
+    <string name="buttonOk">Ok</string>
 </resources>

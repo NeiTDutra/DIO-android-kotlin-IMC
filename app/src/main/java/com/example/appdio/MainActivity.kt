@@ -8,7 +8,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setListeners()
         Log.w("Lifecycle", "Tela sendo criada" )
+    }
+
+    private fun setListeners() {
+        buttonCalcular.setOnClickListener {
+
+        }
     }
 
     override fun onStart() {
