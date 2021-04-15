@@ -5,4 +5,11 @@
     <string name="calcular">Calcular</string>
     <string name="calculo_de_imc">Cálculo de IMC</string>
     <string name="buttonOk">Ok</string>
+    <string name="abaixo">Abaixo do Peso</string>
+    <string name="obesidade_3">Obesidade III</string>
+    <string name="obesidade_2">Obesidade II</string>
+    <string name="obesidade_1">Obesidade I</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="peso_normal">Peso normal</string>
+    <string name="indefinido">Indefinido</string>
 </resources>
