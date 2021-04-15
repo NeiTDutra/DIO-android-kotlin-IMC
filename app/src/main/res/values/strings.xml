@@ -12,4 +12,12 @@
     <string name="sobrepeso">Sobrepeso</string>
     <string name="peso_normal">Peso normal</string>
     <string name="indefinido">Indefinido</string>
+    <string name="faixa_0">Menor que 61kg</string>
+    <string name="faixa_1">60kg e 64kg</string>
+    <string name="faixa_2">60kg e 69kg</string>
+    <string name="faixa_3">60kg e 74kg</string>
+    <string name="faixa_4">60kg e 75kg</string>
+    <string name="faixa_5">65kg e 79kg</string>
+    <string name="faixa_6">65kg e 84kg</string>
+    <string name="faixa_7">70kg e 89kg</string>
 </resources>

@@ -19,6 +19,7 @@ class ResultActivity : AppCompatActivity() {
 
         textViewResultImc?.text = intent.getStringExtra(IMC_ID)
         textViewResultFaixa?.text = intent.getStringExtra(FAIXA_DE_PESO)
+        textViewResultPeso?.text = intent.getStringExtra(PESO_IDEAL)
     }
 
     override fun onStart() {
@@ -53,5 +54,6 @@ class ResultActivity : AppCompatActivity() {
     companion object{
         const val FAIXA_DE_PESO = "Peso"
         const val IMC_ID = "imc"
+        const val PESO_IDEAL = "peso_ideal"
     }
 }

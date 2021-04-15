@@ -3,5 +3,5 @@
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
     <string name="calcular">Calcular</string>
-    <string name="c_lculo_de_imc">Cálculo de IMC</string>
+    <string name="calculo_de_imc">Cálculo de IMC</string>
 </resources>

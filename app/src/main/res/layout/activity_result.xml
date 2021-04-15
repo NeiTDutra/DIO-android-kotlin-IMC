@@ -21,9 +21,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <Button
         android:id="@+id/buttonOk"
@@ -39,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResultTitleImc"
-        app:layout_constraintVertical_bias="0.54"
+        app:layout_constraintVertical_bias="0.762"
         app:rippleColor="@color/teal_700" />
 
     <TextView
@@ -57,13 +58,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResultTitleImc"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.032"
         tools:text="23,4" />
 
     <TextView
         android:id="@+id/textViewResultTitleFaixa"
-        android:layout_width="226dp"
-        android:layout_height="60dp"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
         android:gravity="center_horizontal"
         android:text="SUA FAIXA DE PESO É DE:"
         android:textAlignment="center"
@@ -72,10 +73,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonOk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResultImc"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/textViewResultFaixa"
@@ -88,9 +89,42 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/buttonOk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResultTitleFaixa"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.05"
         tools:text="Obesidade" />
+
+    <TextView
+        android:id="@+id/textViewResultTitlePeso"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="SEU PESO IDEAL É ENTRE:"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultFaixa"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/textViewResultPeso"
+        android:layout_width="352dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultTitlePeso"
+        app:layout_constraintVertical_bias="0.122"
+        tools:text="65 e 80" />
 </androidx.constraintlayout.widget.ConstraintLayout>

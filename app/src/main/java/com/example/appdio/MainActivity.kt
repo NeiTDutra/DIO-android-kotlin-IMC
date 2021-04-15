@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         imc?.let {
             val faixa: String = when (it) {
-                in 18.5..24.9 -> {
+                in 18.5f..24.9f -> {
                     getString(R.string.peso_normal)
                 }
                 in 25f..29f -> {
@@ -43,17 +43,46 @@ class MainActivity : AppCompatActivity() {
                     getString(R.string.obesidade_2)
                 }
                 else -> {
-                    if (it < 18.5) {
+                    if (it < 18.5f) {
                         getString(R.string.abaixo)
-                    } else if (it > 40) {
+                    } else if (it > 40f) {
                         getString(R.string.obesidade_3)
                     }
                     getString(R.string.indefinido)
                 }
 
             }
+            val peso_ideal: String = when (altura.toFloat()) {
+                in 1.50f..1.55f -> {
+                    getString(R.string.faixa_0)
+                }
+                in 1.56f..1.60f -> {
+                    getString(R.string.faixa_1)
+                }
+                in 1.61f..1.65f -> {
+                    getString(R.string.faixa_2)
+                }
+                in 1.66f..1.69f -> {
+                    getString(R.string.faixa_3)
+                }
+                in 1.70f..1.75f -> {
+                    getString(R.string.faixa_4)
+                }
+                in 1.76f..1.80f -> {
+                    getString(R.string.faixa_5)
+                }
+                in 1.81f..1.85f -> {
+                    getString(R.string.faixa_6)
+                }
+                else -> ({
+                    if (altura.toFloat() > 1.85f) {
+                        getString(R.string.faixa_7)
+                    }
+                    getString(R.string.indefinido)
+                }).toString()
+            }
 
-            abrirNovaTelaComResultados("%.2f".format(it), faixa)
+            abrirNovaTelaComResultados("%.2f".format(it), faixa, peso_ideal)
         }
 
     }
@@ -64,17 +93,17 @@ class MainActivity : AppCompatActivity() {
 
         return if (peso != null && altura != null) {
             val imc = peso / (altura * altura)
-            //titleTXT.text = getString(R.string.imc_resultado).format(imc)
             imc
         } else {
             null
         }
     }
 
-    private fun abrirNovaTelaComResultados(imc: String, faixa: String) {
+    private fun abrirNovaTelaComResultados(imc: String, faixa: String, peso_ideal: String) {
         val result = Intent(this, ResultActivity::class.java)
         result.putExtra(ResultActivity.IMC_ID, imc)
         result.putExtra(ResultActivity.FAIXA_DE_PESO, faixa)
+        result.putExtra(ResultActivity.PESO_IDEAL, peso_ideal)
         startActivity(result)
     }
 
